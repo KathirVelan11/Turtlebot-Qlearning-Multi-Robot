@@ -1,8 +1,8 @@
 # Multi-Robot Q-Learning Exploration
-
 [![IEEE Paper](https://img.shields.io/badge/IEEE-Paper-blue)](https://ieeexplore.ieee.org/abstract/document/10969952?casa_token=l6-5WLFp6IYAAAAA:PF2OjNDB6tvW-Up4EojfFEiSzUtS5ljlr8dxVrF5ErdVm9d_-ZmeS8V4o9Xi-wxU4e8aTD_7_AQA)
 [![ROS Version](https://img.shields.io/badge/ROS-Noetic-brightgreen)](http://wiki.ros.org/noetic)
 [![Python Version](https://img.shields.io/badge/Python-3.8+-blue)](https://www.python.org/downloads/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20Focal%20Fossa-orange)](https://releases.ubuntu.com/20.04/)
 
 ## Overview
 
@@ -30,17 +30,20 @@ Turtlebot-Qlearning-Multi-Robot/
 │   ├── q_learning_node.py              # Main Q-learning implementation
 │   └── visualization_node.py           # Evaluation metrics and visualization
 ├── world/
-│   └── nov19.world                     # Custom Gazebo world file
+│   └── training.world                     # Custom Gazebo world file
 ├── data/
 │   └── q_table_data.csv                # Pre-trained Q-table data
 ├── config/
 │   └── package.xml                     # ROS package configuration
 ├── docs/
-│   └── images/                         # Documentation images
+│   └── IEEE paper                      # PDF copy of the published IEEE paper for offline reference
 └── requirements.txt                    # Python dependencies
 ```
 
 ## 🛠️ Installation
+
+> ⚠️ **Note**: This project is tested and designed to work only on **Ubuntu 20.04 (Focal Fossa)** with **ROS Noetic** and **Gazebo 11.11+**. Compatibility with other Ubuntu or ROS versions is **not guaranteed**.
+> It is meant for **simulation only** and is **not tested on real hardware**.
 
 ### Step 1: Install ROS Noetic
 ```bash
@@ -105,6 +108,7 @@ source ~/.bashrc
 ```
 
 ### Step 4: Install Python Dependencies
+> ✅ Make sure you are using **Python 3.8+**.
 ```bash
 # Install required Python packages
 pip3 install numpy pandas matplotlib
@@ -182,3 +186,6 @@ year = {2025},
 doi = {10.1109/XXXXXX.2025.10969952}
 }
 ```
+
+## 🤝 Want to Help?
+Fork the repo and send a pull request with any improvements!
