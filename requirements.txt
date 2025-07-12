@@ -1,0 +1,6 @@
+numpy>=1.18.0
+pandas>=1.1.0
+matplotlib>=3.2.0
+rospy>=1.15.0
+rospkg>=1.2.8
+catkin_pkg>=0.4.23
