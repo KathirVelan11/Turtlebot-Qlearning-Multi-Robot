@@ -8,6 +8,11 @@
 
 This project implements a multi-robot exploration system using Q-learning for autonomous navigation and area coverage in simulated environments. Four TurtleBot3 robots collaborate to explore an unknown environment without centralized control, using reinforcement learning to optimize their exploration strategies.
 
+## 📄 Official IEEE Paper
+
+_K. Velan et al., "Multi-Robot Exploration using Decentralized Q-Learning," IEEE Xplore, 2025._  
+[🔗 Click here to view the paper on IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10969952)
+
 ### Key Features
 
 - **Multi-Agent Q-Learning**: Decentralized learning approach with same Q-table for all 4 turtlebots.
