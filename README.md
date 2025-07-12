@@ -71,6 +71,8 @@ source ~/.bashrc
 sudo apt install ros-noetic-turtlebot3-*
 sudo apt install ros-noetic-gazebo-*
 sudo apt install ros-noetic-navigation
+```
+```bash
 # Set TurtleBot3 model environment variable
 echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 source ~/.bashrc
@@ -81,11 +83,17 @@ source ~/.bashrc
 # Create catkin workspace
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
+```
+```bash
 # Clone this repository
 git clone https://github.com/yourusername/multi-robot-qlearning-exploration.git
+```
+```bash
 # Navigate to workspace and build
 cd ~/catkin_ws
 catkin_make
+```
+```bash
 # Source the workspace
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
@@ -101,32 +109,46 @@ pip3 install numpy pandas matplotlib
 ```bash
 # Clean any existing ROS processes
 killall -9 rosmaster roscore gazebo gzserver gzclient
+```
+```bash
 # Start roscore
-roscore &
+roscore
+```
+```bash
 # Kill any existing nodes
 rosnode kill -a
+```
+```bash
 # Navigate to workspace and rebuild
 cd ~/catkin_ws
 catkin_make clean
 catkin_make
+```
+```bash
 # Source environments
 source /opt/ros/noetic/setup.bash
 source ~/catkin_ws/devel/setup.bash
+```
+```bash
 # Set TurtleBot3 model
 export TURTLEBOT3_MODEL=burger
+```
+```bash
 # Launch the simulation
 roslaunch multi_robot_qlearning_exploration multi_robot_world.launch
 ```
 
-### Running the Q-Learning Algorithm - In a new terminal:
+### Open another terminal - To run the Q-Learning Algorithm :
 ```bash
 # Source the workspace
 source ~/catkin_ws/devel/setup.bash
+```
+```bash
 # Run the Q-learning node
 rosrun multi_robot_qlearning_exploration q_learning_node.py
 ```
 
-### Visualization in RViz - In another terminal:
+### Open another terminal -To start RViz :
 ```bash
 # Launch RViz
 rosrun rviz rviz
@@ -137,7 +159,7 @@ rosrun rviz rviz
 # - /q_values (Q-value heatmap)
 ```
 
-### Running Evaluation Metrics
+### To see Evaluation metrics in RViz :
 ```bash
 # Run visualization node for metrics
 rosrun multi_robot_qlearning_exploration visualization_node.py
