@@ -25,19 +25,19 @@ _K. Velan et al., "Multi-Robot Exploration using Decentralized Q-Learning," IEEE
 ```
 Turtlebot-Qlearning-Multi-Robot/
 ├── launch/
-│   └── multi_robot_world.launch        # Launch file for Gazebo simulation
+│   └── multi_robot_world.launch                                 # Launch file for Gazebo simulation
 ├── src/
-│   ├── q_learning_node.py              # Main Q-learning implementation
-│   └── visualization_node.py           # Evaluation metrics and visualization
+│   ├── q_learning_node.py                                       # Main Q-learning implementation
+│   └── visualization_node.py                                    # Evaluation metrics and visualization
 ├── world/
-│   └── training.world                     # Custom Gazebo world file
+│   └── training.world                                           # Custom Gazebo world file
 ├── data/
-│   └── q_table_data.csv                # Pre-trained Q-table data
+│   └── q_table_data.csv                                         # Pre-trained Q-table data
 ├── config/
-│   └── package.xml                     # ROS package configuration
+│   └── package.xml                                              # ROS package configuration
 ├── docs/
-│   └── IEEE paper                      # PDF copy of the published IEEE paper for offline reference
-└── requirements.txt                    # Python dependencies
+│   └── Swarm_Robotics_for_Area_Exploration_Using_Q-Learning     # PDF copy of the published IEEE paper for offline reference
+└── requirements.txt                                             # Python dependencies
 ```
 
 ## 🛠️ Installation
