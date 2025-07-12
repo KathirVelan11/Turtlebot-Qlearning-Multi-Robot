@@ -1,0 +1,10 @@
+<launch>
+    <!-- Start the Gazebo world -->
+    <arg name="world_name" default="$(find Turtlebot-qlearning-multi-robot)/world/training.world"/>
+    <param name="robot_namespace" value="robot1"/>
+    
+    <!-- Launch Gazebo with the specified world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world_name)" />
+    </include>
+</launch>
