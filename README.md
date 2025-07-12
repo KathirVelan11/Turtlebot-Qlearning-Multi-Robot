@@ -99,6 +99,7 @@ git clone https://github.com/yourusername/multi-robot-qlearning-exploration.git
 ```bash
 # Navigate to workspace and build
 cd ~/catkin_ws
+rosdep install --from-paths src --ignore-src -r -y
 catkin_make
 ```
 ```bash
