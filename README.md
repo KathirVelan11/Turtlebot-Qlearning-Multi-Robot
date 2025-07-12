@@ -23,7 +23,7 @@ _K. Velan et al., "Multi-Robot Exploration using Decentralized Q-Learning," IEEE
 
 ## Project Structure
 ```
-Turtlebot-qlearning-multi-robot/
+Turtlebot-Qlearning-Multi-Robot/
 ├── launch/
 │   └── multi_robot_world.launch        # Launch file for Gazebo simulation
 ├── src/
@@ -168,4 +168,17 @@ rosrun rviz rviz
 ```bash
 # Run visualization node for metrics
 rosrun multi_robot_qlearning_exploration visualization_node.py
+```
+
+## 📚 Citation
+If you use this work in your research, please cite:
+```
+
+@article{Velan2025MultiRobotQLearning,
+author = {Kathir Velan and Others},
+title = {Multi-Robot Exploration using Decentralized Q-Learning},
+journal = {IEEE Xplore},
+year = {2025},
+doi = {10.1109/XXXXXX.2025.10969952}
+}
 ```
